@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FC"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="317dp"
+            android:src="@drawable/imagoicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-78dp"
+            android:text="@string/BTNOLOGIN"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            style="@style/MediumTextStyle" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ingresa tu correo y contraseña"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <!--CORREO-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="@color/red"
+            app:cursorColor="@color/black"
+            app:hintTextColor="@color/blue">
+
+
+            <EditText
+                android:id="@+id/correoLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correoLogin"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--CONTRASEÑA-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="@color/red"
+            app:cursorColor="@color/black"
+            app:hintTextColor="@color/blue"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/passLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passLogin"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--BOTON LOGEO-->
+        <Button
+            android:id="@+id/BtnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#FF3131"
+            android:text="@string/BtnLogin"
+            android:textColor="#F4F6FC"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

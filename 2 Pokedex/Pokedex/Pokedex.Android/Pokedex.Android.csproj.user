@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <SelectedDevice>OPPO CPH2387</SelectedDevice>
-    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
-    <ActiveDebugProfile>OPPO CPH2387</ActiveDebugProfile>
-    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
-  </PropertyGroup>
-</Project>

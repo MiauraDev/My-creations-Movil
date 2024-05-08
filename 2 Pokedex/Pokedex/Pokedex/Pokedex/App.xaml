@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PokemonApp.Converters"
+             x:Class="Pokedex.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- Estilo personalizado para las tarjetas de Pokémon en el CollectionView -->
+            <Style TargetType="Frame" x:Key="PokemonFrameStyle">
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal" />
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#E0E0E0" />
+                                    <!-- Color gris cuando está seleccionado -->
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <!-- Colores para cada tipo -->
+            <Color x:Key="TypeColor_normal">#A8A878</Color>
+            <Color x:Key="TypeColor_fire">#F08030</Color>
+            <Color x:Key="TypeColor_water">#6890F0</Color>
+            <Color x:Key="TypeColor_electric">#F8D030</Color>
+            <Color x:Key="TypeColor_grass">#78C850</Color>
+            <Color x:Key="TypeColor_ice">#98D8D8</Color>
+            <Color x:Key="TypeColor_fighting">#C03028</Color>
+            <Color x:Key="TypeColor_poison">#A040A0</Color>
+            <Color x:Key="TypeColor_ground">#E0C068</Color>
+            <Color x:Key="TypeColor_flying">#A890F0</Color>
+            <Color x:Key="TypeColor_psychic">#F85888</Color>
+            <Color x:Key="TypeColor_bug">#A8B820</Color>
+            <Color x:Key="TypeColor_rock">#B8A038</Color>
+            <Color x:Key="TypeColor_ghost">#705898</Color>
+            <Color x:Key="TypeColor_dragon">#7038F8</Color>
+            <Color x:Key="TypeColor_dark">#705848</Color>
+            <Color x:Key="TypeColor_steel">#B8B8D0</Color>
+            <Color x:Key="TypeColor_fairy">#EE99AC</Color>
+
+            <!-- Converter para mapear tipos a colores -->
+            <local:TypeToColorConverter x:Key="TypeToColorConverter" />
+
+            <!-- Converter para mapear estadísticas a ancho de barra -->
+            <local:StatToBarWidthConverter x:Key="StatToBarWidthConverter" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
+
