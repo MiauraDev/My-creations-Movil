@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://www.javascript100.dev">
-    <img src="./Banners.png" /> 
+    <img src="https://i.imgur.com/s6GHWtf.png" /> 
     </a>
   <h4>
     <strong>[Laura Luque](https://github.com/MiauraDev)</strong>
